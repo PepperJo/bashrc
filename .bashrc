@@ -15,7 +15,7 @@ COLOR_HOSTNAME="33"
 COLOR_PATH="34"
 
 function fg_color {
-    printf "\033[%sm%s\033[m" $1 $2
+    printf "\[\033[%sm\]%s\[\033[m\]" $1 $2
 }
 
 GIT_PRE="[$(fg_color $COLOR_USERNAME "\u")@$(fg_color $COLOR_HOSTNAME "\h"):$(fg_color $COLOR_PATH "\w")"
