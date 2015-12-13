@@ -10,7 +10,15 @@ source /etc/profile.d/vte.sh
 
 source /usr/share/git/git-prompt.sh
 
-GIT_PRE="[\u@\h:\w"
+COLOR_USERNAME="31"
+COLOR_HOSTNAME="33"
+COLOR_PATH="34"
+
+function fg_color {
+    printf "\033[%sm%s\033[m" $1 $2
+}
+
+GIT_PRE="[$(fg_color $COLOR_USERNAME "\u")@$(fg_color $COLOR_HOSTNAME "\h"):$(fg_color $COLOR_PATH "\w")"
 GIT_POST="]\$ "
 GIT_FORMAT="|%s"
 GIT_PS1_SHOWCOLORHINTS=1
