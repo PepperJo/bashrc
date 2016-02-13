@@ -41,5 +41,6 @@ export HISTFILESIZE=5000
 export HISTSIZE=5000
 shopt -s checkwinsize
 
-PATH=$PATH:~/.cabal/bin
+export PATH=$PATH:~/.cabal/bin
+export RUST_SRC_PATH=/usr/src/rust/src
 
