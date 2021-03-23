@@ -39,8 +39,6 @@ fi
 
 export HISTFILESIZE=5000
 export HISTSIZE=5000
+export LIBVA_DRIVER_NAME=radeonsi
 shopt -s checkwinsize
-
-export PATH=$PATH:~/.cabal/bin
-export RUST_SRC_PATH=/usr/src/rust/src
 
