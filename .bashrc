@@ -37,8 +37,8 @@ if [ "$TERM" != "linux" ]; then
      PROMPT_COMMAND="__restore_path;__git_ps1 '$GIT_PRE' '$GIT_POST' '$GIT_FORMAT'"
 fi
 
-export HISTFILESIZE=5000
-export HISTSIZE=5000
+export HISTFILESIZE=-1
+export HISTSIZE=-1
 export LIBVA_DRIVER_NAME=radeonsi
 shopt -s checkwinsize
 
