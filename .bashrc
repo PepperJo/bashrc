@@ -39,6 +39,7 @@ fi
 
 export HISTFILESIZE=-1
 export HISTSIZE=-1
+export HISTCONTROL="ignorespace"
 export LIBVA_DRIVER_NAME=radeonsi
 shopt -s checkwinsize
 
